@@ -1,0 +1,5 @@
+model,clean_acc,precision,recall,f1,clean_ce_loss,mean_corrupted_acc,mean_retention,mean_conf_drop,CSP_gaussian_blur,CSP_gaussian_noise,CSP_low_light,CSP_jpeg,CSP_pixelate
+resnet50,98.5478,98.5422,98.5463,98.5426,0.0452,89.8038,0.9113,0.0693,3,3,3,3,2
+convnext_tiny,99.6943,99.6975,99.6888,99.6928,0.0147,90.7669,0.9105,0.0557,-,-,-,-,2
+deit_small,99.2102,99.221,99.2074,99.2127,0.026,94.8263,0.9558,0.0296,3,-,-,-,3
+swin_tiny,99.465,99.4642,99.4627,99.4623,0.017,89.1652,0.8964,0.0568,3,-,-,3,1

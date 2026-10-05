@@ -1,0 +1,22 @@
+| Degradation | Model | Clean | Level 1 | Level 2 | Level 3 | Mean |
+|---|---|---|---|---|---|---|
+| Gaussian blur (B1-B3) | ResNet-50 | 98.55 | 97.43 | 92.13 | 84.36 | 91.30 |
+| Gaussian blur (B1-B3) | ConvNeXt-T | 99.69 | 98.98 | 96.33 | 90.24 | 95.18 |
+| Gaussian blur (B1-B3) | DeiT-S | 99.21 | 98.73 | 95.59 | 88.15 | 94.16 |
+| Gaussian blur (B1-B3) | Swin-T | 99.46 | 98.88 | 95.85 | 87.85 | 94.19 |
+| Gaussian noise (N1-N3) | ResNet-50 | 98.55 | 96.54 | 91.59 | 81.78 | 89.97 |
+| Gaussian noise (N1-N3) | ConvNeXt-T | 99.69 | 99.39 | 98.01 | 95.85 | 97.75 |
+| Gaussian noise (N1-N3) | DeiT-S | 99.21 | 99.18 | 98.68 | 98.42 | 98.76 |
+| Gaussian noise (N1-N3) | Swin-T | 99.46 | 99.13 | 98.09 | 96.56 | 97.93 |
+| Low light (L1-L3) | ResNet-50 | 98.55 | 98.04 | 96.48 | 88.69 | 94.40 |
+| Low light (L1-L3) | ConvNeXt-T | 99.69 | 99.31 | 98.96 | 96.59 | 98.28 |
+| Low light (L1-L3) | DeiT-S | 99.21 | 99.11 | 98.32 | 93.78 | 97.07 |
+| Low light (L1-L3) | Swin-T | 99.46 | 99.46 | 98.93 | 96.64 | 98.34 |
+| JPEG compression (J30-J7) | ResNet-50 | 98.55 | 97.58 | 95.31 | 83.87 | 92.25 |
+| JPEG compression (J30-J7) | ConvNeXt-T | 99.69 | 98.80 | 97.96 | 93.35 | 96.70 |
+| JPEG compression (J30-J7) | DeiT-S | 99.21 | 98.60 | 97.78 | 94.65 | 97.01 |
+| JPEG compression (J30-J7) | Swin-T | 99.46 | 98.34 | 97.15 | 85.48 | 93.66 |
+| Pixel binning (D2-D4) | ResNet-50 | 98.55 | 95.87 | 79.18 | 68.20 | 81.09 |
+| Pixel binning (D2-D4) | ConvNeXt-T | 99.69 | 91.64 | 74.27 | 31.82 | 65.91 |
+| Pixel binning (D2-D4) | DeiT-S | 99.21 | 98.62 | 90.50 | 72.28 | 87.13 |
+| Pixel binning (D2-D4) | Swin-T | 99.46 | 86.19 | 83.69 | 15.24 | 61.71 |

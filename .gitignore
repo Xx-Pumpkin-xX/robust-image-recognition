@@ -1,0 +1,15 @@
+# model checkpoints and archives (too large for git)
+*.pth
+*.pt
+*.zip
+
+# python / jupyter
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.virtual_documents/
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini

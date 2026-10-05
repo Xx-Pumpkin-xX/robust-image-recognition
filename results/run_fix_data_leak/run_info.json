@@ -1,0 +1,199 @@
+{
+ "run_name": "run_fix_data_leak",
+ "created": "2026-10-05 05:31:05",
+ "eval_split": "test",
+ "n_samples": 3925,
+ "classes_wnid": [
+  "n01440764",
+  "n02102040",
+  "n02979186",
+  "n03000684",
+  "n03028079",
+  "n03394916",
+  "n03417042",
+  "n03425413",
+  "n03445777",
+  "n03888257"
+ ],
+ "class_names": [
+  "tench",
+  "english_springer",
+  "cassette_player",
+  "chain_saw",
+  "church",
+  "french_horn",
+  "garbage_truck",
+  "gas_pump",
+  "golf_ball",
+  "parachute"
+ ],
+ "models": [
+  "resnet50",
+  "convnext_tiny",
+  "deit_small",
+  "swin_tiny"
+ ],
+ "conditions": [
+  {
+   "code": "clean",
+   "degradation": "clean",
+   "severity": 0,
+   "param": null
+  },
+  {
+   "code": "B1",
+   "degradation": "gaussian_blur",
+   "severity": 1,
+   "param": 1.0
+  },
+  {
+   "code": "B2",
+   "degradation": "gaussian_blur",
+   "severity": 2,
+   "param": 2.0
+  },
+  {
+   "code": "B3",
+   "degradation": "gaussian_blur",
+   "severity": 3,
+   "param": 3.0
+  },
+  {
+   "code": "N1",
+   "degradation": "gaussian_noise",
+   "severity": 1,
+   "param": 0.04
+  },
+  {
+   "code": "N2",
+   "degradation": "gaussian_noise",
+   "severity": 2,
+   "param": 0.08
+  },
+  {
+   "code": "N3",
+   "degradation": "gaussian_noise",
+   "severity": 3,
+   "param": 0.12
+  },
+  {
+   "code": "L1",
+   "degradation": "low_light",
+   "severity": 1,
+   "param": [
+    0.6,
+    1.5
+   ]
+  },
+  {
+   "code": "L2",
+   "degradation": "low_light",
+   "severity": 2,
+   "param": [
+    0.4,
+    1.9
+   ]
+  },
+  {
+   "code": "L3",
+   "degradation": "low_light",
+   "severity": 3,
+   "param": [
+    0.2,
+    2.6
+   ]
+  },
+  {
+   "code": "J30",
+   "degradation": "jpeg",
+   "severity": 1,
+   "param": 30
+  },
+  {
+   "code": "J15",
+   "degradation": "jpeg",
+   "severity": 2,
+   "param": 15
+  },
+  {
+   "code": "J7",
+   "degradation": "jpeg",
+   "severity": 3,
+   "param": 7
+  },
+  {
+   "code": "D2",
+   "degradation": "pixelate",
+   "severity": 1,
+   "param": 2
+  },
+  {
+   "code": "D3",
+   "degradation": "pixelate",
+   "severity": 2,
+   "param": 3
+  },
+  {
+   "code": "D4",
+   "degradation": "pixelate",
+   "severity": 3,
+   "param": 4
+  }
+ ],
+ "critical_retention": 0.9,
+ "config": {
+  "data_dir": "/kaggle/input/datasets/xbinchen/imagenette2-320/imagenette2-320",
+  "train_folder": "train",
+  "val_folder": "val",
+  "work_dir": "/kaggle/working",
+  "resume_dir": null,
+  "run_name": "run_fix_data_leak",
+  "steps": [
+   "preview",
+   "train",
+   "evaluate"
+  ],
+  "classes": "all",
+  "val_ratio": 0.2,
+  "seed": 42,
+  "models": [
+   "resnet50",
+   "convnext_tiny",
+   "deit_small",
+   "swin_tiny"
+  ],
+  "epochs": 10,
+  "batch_size": 64,
+  "lr": 0.0001,
+  "weight_decay": 0.05,
+  "num_workers": 4,
+  "amp": true,
+  "eval_split": "test",
+  "severities": [
+   1,
+   2,
+   3
+  ],
+  "critical_retention": 0.9,
+  "export_splits": [
+   "val"
+  ],
+  "verbose": false,
+  "save_plots": true,
+  "zip_checkpoints": false,
+  "degradations": [
+   "gaussian_blur",
+   "gaussian_noise",
+   "low_light",
+   "jpeg",
+   "pixelate"
+  ]
+ },
+ "environment": {
+  "torch": "2.10.0+cu128",
+  "torchvision": "0.25.0+cu128",
+  "timm": "1.0.26",
+  "device": "cuda",
+  "gpu": "Tesla T4"
+ }
+}
