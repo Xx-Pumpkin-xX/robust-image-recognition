@@ -37,7 +37,7 @@ run_fix_data_leak/
 | `N1` `N2` `N3` | Gaussian noise, σ = 0.04, 0.08, 0.12 |
 | `L1` `L2` `L3` | low light, (f, γ) = (0.6, 1.5), (0.4, 1.9), (0.2, 2.6) |
 | `J30` `J15` `J7` | JPEG, quality 30, 15, 7 |
-| `D2` `D3` `D4` | pixel binning, k = 2, 3, 4 |
+| `D2` `D3` `D4` | resolution downscaling, k = 2, 3, 4 |
 
 Details of the degradations: [DATA.md](../DATA.md).
 
