@@ -4,7 +4,7 @@ Final project, Deep Learning course 2026.
 
 We fine-tune four ImageNet-pretrained backbones (ResNet-50, ConvNeXt-T, DeiT-S, Swin-T) on clean
 Imagenette images and measure how their accuracy degrades under five realistic corruptions
-(Gaussian blur, Gaussian noise, low light, JPEG compression, pixel binning), each at three severity
+(Gaussian blur, Gaussian noise, low light, JPEG compression, resolution downscaling), each at three severity
 levels. Corruptions are applied **only at test time**.
 
 **Team:**
