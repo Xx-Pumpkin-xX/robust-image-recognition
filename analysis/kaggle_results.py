@@ -14,7 +14,7 @@ Load a results folder produced by the Kaggle notebook (Part 1).
     run.history('resnet50')                  # per-epoch validation loss / accuracy
 
 Condition codes: clean, B1-B3 (Gaussian blur), N1-N3 (Gaussian noise), L1-L3 (low light),
-J30/J15/J7 (JPEG quality), D2-D4 (pixel binning).
+J30/J15/J7 (JPEG quality), D2-D4 (resolution downscaling).
 Needs: numpy, pandas.
 """
 import json

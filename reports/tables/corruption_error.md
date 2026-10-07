@@ -1,4 +1,4 @@
-| Model | Gaussian blur | Gaussian noise | Low light | JPEG compression | Pixel binning | mCE |
+| Model | Gaussian blur | Gaussian noise | Low light | JPEG compression | Resolution downscaling | mCE |
 |---|---|---|---|---|---|---|
 | ResNet-50 | 100.0 | 100.0 | 100.0 | 100.0 | 100.0 | 100.0 |
 | ConvNeXt-T | **55.4** | 22.4 | 30.7 | 42.5 | 180.2 | 66.2 |

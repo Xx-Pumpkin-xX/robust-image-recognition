@@ -45,7 +45,7 @@ MODEL_LABEL = {'resnet50': 'ResNet-50', 'convnext_tiny': 'ConvNeXt-T', 'deit_sma
 MODEL_COLOR = {'resnet50': '#2a78d6', 'convnext_tiny': '#eb6834', 'deit_small': '#1baf7a',
                'swin_tiny': '#eda100', 'vgg16': '#e87ba4'}
 DEG_LABEL = {'gaussian_blur': 'Gaussian blur', 'gaussian_noise': 'Gaussian noise', 'low_light': 'Low light',
-             'jpeg': 'JPEG compression', 'pixelate': 'Pixel binning'}
+             'jpeg': 'JPEG compression', 'pixelate': 'Resolution downscaling'}
 SEQ = LinearSegmentedColormap.from_list('seq', ['#fcfcfb', '#9ec5f4', '#2a78d6', '#104281'])
 INK, MUTED = '#0b0b0b', '#898781'
 
