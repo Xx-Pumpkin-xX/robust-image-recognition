@@ -1,10 +1,9 @@
 # Report
 
-The report is written in LaTeX on Overleaf. The final PDF will be added here.
+[`Robust_Image_Recognition_report.pdf`](Robust_Image_Recognition_report.pdf) is the final report,
+written in LaTeX on Overleaf (ICLR 2027 style).
 
-Tables and figures for the report are generated from the results by
-`python analysis/make_report.py`:
+Its tables and figures are generated from the results by `python analysis/make_report.py`:
 
-- `reports/tables/*.tex` — tables in LaTeX (booktabs) format, ready to `\input` or paste into Overleaf
-  (requires `\usepackage{booktabs}`)
+- `reports/tables/*.tex` — tables in LaTeX (booktabs) format
 - `reports/figures/*.png` — figures

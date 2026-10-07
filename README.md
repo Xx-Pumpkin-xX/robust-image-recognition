@@ -119,6 +119,6 @@ They can be reproduced by running Part 1 with the settings above.
 
 ## Report
 
-The report is written in LaTeX on Overleaf; the final PDF will be in [`reports/report/`](reports/report/).
+The final report is [`reports/report/Robust_Image_Recognition_report.pdf`](reports/report/Robust_Image_Recognition_report.pdf), written in LaTeX on Overleaf.
 It uses the tables in `reports/tables/*.tex` and the figures in `reports/figures/`.
 Full references and appendix are in the report.
